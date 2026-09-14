@@ -2,11 +2,11 @@
 # @file: vscodium_bash
 # @mission: linkar configs locais ao .bashrc
 
-export VSCODIUM_BIN="$APPIMAGES/vscodium"
-alias codium="edit"
-alias code="edit"
+export VSCODIUM_BIN="$OAPPIMAGES/vscodium"
+# alias codium="edit"
+# alias code="edit"
 
-edit() {
+editCode() {
     local TARGET="${1:-.}"
 
     case "$EDITOR_MASTER" in

@@ -2,7 +2,9 @@
 **/globalStorage/
 **/workspaceStorage/
 **/History/
+/profiles/**/chatLanguageModels.json
 zzz/pastas_DEFAULT_USER/
+*chatLanguageModels.json
 
 ### AL ###
 # Template for AL projects for Dynamics 365 Business Central
@@ -27,3 +29,4 @@ rad.json
 *.flf
 # Test results file
 TestResults.xml
+profiles/71cb6dfa/chatLanguageModels.json
