@@ -1,0 +1,324 @@
+{
+  // Configurações Runtime: Deno --------------------------------------------------------------------------------------------------
+  "deno.enable": true, // Habilita a extensão para o projeto.
+  "deno.lint": true, // Ativa o linter do Deno.
+  "deno.unstable": false, // Mantém o uso de APIs estáveis.
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true,
+    "https://raw.githubusercontent.com": true
+  }, // Adiciona hosts confiáveis para o autocomplete.
+  "deno.importMap": "./import_map.json", // Caminho para o import map do Deno.
+
+  // @sets: extensao path-intellisense --
+  "path-intellisense.extensionOnImport": true,
+  "path-intellisense.showHiddenFiles": true,
+  "path-intellisense.mappings": {
+    "/": "${workspaceFolder}",
+    "lib": "${workspaceFolder}/lib",
+    "global": "/Users/dummy/globalLibs"
+  },
+  // -- @sets: extensao IA WINDSURF -------------------
+  "codeium.enableCodeLens": false, // mostrar codeium na barra de  acima das funcoes.
+  "editor.quickSuggestions": {
+    "other": true, // Habilita sugestões de autocompletar para todas as situações, exceto comentários e strings.
+    "comments": false, // Desativa sugestões de autocompletar para comentários.
+    "strings": false // Desativa sugestões de autocompletar para strings.
+  },
+  "editor.suggest.enabled": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false, // sugestão de autocompletar para casos especificos listados abaixo:.
+  // "[javascript]": {
+  //   "editor.quickSuggestions": {
+  //     "other": false
+  //   }
+  // },
+
+  // Configurações do Editor e Workspace (Global) ------------------------------------------------------------------------
+  "workbench.editor.limit.enabled": false, // para nao ficar fechando buffer sem uso.
+  "workbench.editor.enablePreview": false, // false: nao substitui arquivo ao abrir , abre outro buffer
+  "editor.tabSize": 2, // Define o tamanho da tabulação para 2 espaços - space identatations.
+  "editor.insertSpaces": true, // tem que habilitar espaços - para funcionar o tabsize
+  "editor.formatOnSave": true, // Formata o arquivo ao salvar (configuração global).
+  "editor.rulers": [120], // Define a linha visual na coluna 120.
+  "editor.fontSize": 14, // Define o tamanho da fonte.
+  "editor.lineHeight": 1.8, // Define a altura da linha.
+  "editor.acceptSuggestionOnCommitCharacter": true, // Aceita sugestões com caracteres de commit.
+  "editor.fontFamily": "JetBrains Mono", // Define a fonte padrão do editor.
+  "editor.fontLigatures": true, // Ativa ligaduras de fonte.
+  "editor.parameterHints.enabled": false, // Desabilita dicas de parâmetros.
+  "editor.renderLineHighlight": "gutter", // Destaca a linha atual apenas na margem.
+  "editor.hideCursorInOverviewRuler": true, // Oculta o cursor na régua de visão geral.
+  "editor.scrollbar.vertical": "visible", // Mostra a barra de rolagem vertical.
+  "editor.scrollbar.horizontal": "hidden", // Esconde a barra de rolagem horizontal.
+  "editor.stickyScroll.enabled": false, // Desabilita a rolagem fixa.
+  "workbench.tree.enableStickyScroll": false, // Desabilita a rolagem fixa na árvore.
+  "workbench.colorTheme": "Dracula Theme", // Define o tema de cor padrão.
+  "workbench.preferredLightColorTheme": "Dracula Theme", // Tema padrão para modo claro.
+  "workbench.sideBar.location": "right", // Move a posicao barra lateral sidebar. opcoes: [right = direita, left = esquerda]
+  "workbench.panel.defaultLocation": "bottom", // Define a localização padrão do painel.
+  "workbench.editor.labelFormat": "short", // Formato curto para abas do editor.
+  "workbench.commandCenter": false, // Oculta o centro de comandos.
+  "workbench.startupEditor": "none", // Inicia o VSCodium sem editor aberto.
+  "files.autoSave": "afterDelay", // Salva arquivos automaticamente.
+  "files.enableTrash": true, // Habilita a lixeira para exclusão de arquivos.
+  "files.associations": {
+    "*.json": "jsonc",
+    "*.css": "css",
+    ".env.*": "dotenv",
+    ".dev.vars": "dotenv",
+    ".prettierrc": "jsonc"
+  }, // Associações de arquivos.
+  "explorer.confirmDelete": true, // Confirma a exclusão de arquivos.
+  "explorer.confirmDragAndDrop": false, // Confirma arrastar e soltar.
+  "explorer.compactFolders": false, // Desabilita pastas compactas.
+  "explorer.sortOrder": "foldersNestsFiles", // Ordem de classificação do explorador.
+  "explorer.fileNesting.enabled": true, // Habilita o aninhamento de arquivos.
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  }, // Padrões de aninhamento de arquivos.
+  "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal.
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font", // Fonte do terminal.
+  "terminal.integrated.gpuAcceleration": "on", // Ativa aceleração GPU no terminal.
+  "terminal.integrated.showExitAlert": false, // Desabilita alerta de saída do terminal.
+  "git.autofetch": true, // Ativa o auto-fetch do Git.
+  "git.confirmSync": false, // Desabilita confirmação de sincronização.
+  "window.restoreWindows": "all", // Restaura todas as janelas ao reabrir.
+  "window.closeWhenEmpty": false, // Mantém a janela aberta quando vazia.
+  "window.commandCenter": false, // Oculta o centro de comandos.
+  "redhat.telemetry.enabled": false, // Desabilita a telemetria Red Hat.
+  "markdown-preview-enhanced.previewTheme": "github-dark.css", // Tema de pré-visualização do Markdown.
+  "markdown-preview-enhanced.enableCodeBlockToolbar": true, // Habilita barra de ferramentas em blocos de código.
+
+  // Configurações por Linguagem -----------------------------------------------------------------------------------------
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "javascript.preferences.quoteStyle": "single",
+    "javascript.validate.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.suggest.autoImports": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+
+  // Configurações de Extensões ------------------------------------------------------------------------------------------
+  "prettier.printWidth": 120, // Largura máxima da linha do Prettier.
+  "prettier.tabWidth": 2, // Tabulação do Prettier com 2 espaços.
+  "prettier.useTabs": false, // Usa espaços em vez de tabulações.
+  "prettier.singleQuote": true, // Usa aspas simples.
+  "prettier.semi": false, // Remove ponto e vírgula no final da linha.
+  "prettier.trailingComma": "all", // Adiciona vírgula no final de objetos e arrays.
+  "prettier.bracketSpacing": true, // Espaços entre chaves de objetos.
+  "prettier.arrowParens": "always", // Sempre usa parênteses em arrow functions.
+  "rest-client.environmentVariables": {
+    "Local Env": {
+      "host": "http://localhost:8000"
+    }
+  }, // Variáveis de ambiente para a extensão Rest Client.
+  "console-ninja.featureSet": "Community", // Configuração do Console Ninja.
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "live-server-extension": true,
+    "live-preview-extension": true
+  }, // Habilita suporte automático para ferramentas.
+  "cSpell.enabled": true, // Habilita o corretor ortográfico.
+  "cSpell.language": "en,en-GB,pt", // Idiomas de verificação.
+  "cSpell.camelCase": true,
+  "cSpell.snakeCase": true,
+  "cSpell.pascalCase": true,
+  "cSpell.kebabCase": true, // Permite a verificação em diferentes estilos de nomes.
+  "cSpell.ignoreWords": ["camelCase", "snake_case", "exthayna", "Codeium", "Windsurf"], // Palavras a serem ignoradas.
+  "cSpell.ignoreRegExpList": ["/[0-9a-fA-F]{7,}/", "/[A-Z][0-9]+/"], // Padrões RegEx a serem ignorados.
+  "cSpell.languageSettings": [
+    { "languageId": "json", "enabled": false },
+    { "languageId": "markdown", "language": "pt" },
+    { "languageId": "javascript", "ignoreWords": ["variavel", "minhakey"] },
+    { "languageId": "asciidoc", "enabled": false },
+    { "languageId": "c", "enabled": false },
+    { "languageId": "cpp", "enabled": false },
+    { "languageId": "csharp", "enabled": false },
+    { "languageId": "go", "enabled": false },
+    { "languageId": "handlebars", "enabled": false },
+    { "languageId": "haskell", "enabled": false },
+    { "languageId": "jade", "enabled": false },
+    { "languageId": "java", "enabled": false },
+    { "languageId": "latex", "enabled": false },
+    { "languageId": "php", "enabled": false },
+    { "languageId": "pug", "enabled": false },
+    { "languageId": "python", "enabled": false },
+    { "languageId": "restructuredtext", "enabled": false },
+    { "languageId": "rust", "enabled": false },
+    { "languageId": "scala", "enabled": false },
+    { "languageId": "scss", "enabled": false }
+  ], // Configurações de idioma do CSpell.
+  // Configurações de idioma do CSpell. >> para enviar novas palavras permitidas ao dicionario custom ~/.config/VSCodium/User/dictionaries/my_custom_words.txt
+  "cSpell.dictionaryDefinitions": [
+    {
+      "name": "my-personal-words",
+      "path": "/home/rzj/.config/VSCodium/User/dictionaries/my_custom_words.txt",
+      "addWords": true
+    }
+  ],
+  "cSpell.customDictionaries": ["my-personal-words"],
+
+  // @desc: Garante que novas palavras sejam adicionadas ao dicionário customizado.
+  // @neural: Força a opção "Quick Fix" a escrever diretamente no arquivo .txt,
+  // evitando que as palavras sejam salvas apenas nas configurações do perfil
+  // ou do projeto atual, centralizando seu dicionário pessoal.
+  "cSpell.addWords.defaultAddFile": "~/.config/VSCodium/User/dictionaries/my_custom_words.txt",
+
+  "cSpell.ignoreHeader": false,
+  "cSpell.ignoreUrls": true,
+  "cSpell.ignoreHtmlComments": true,
+
+  // Customizações de Tema e Visual --------------------------------------------------------------------------------------
+  "workbench.colorCustomizations": {
+    "[Dracula Theme]": {
+      "editor.background": "#0d1017",
+      "statusBar.background": "#0d1017",
+      "terminal.background": "#010101", // cor de fundo do terminal
+      "statusBar.foreground": "#FFFFFF",
+      "statusBarItem.hoverBackground": "#A52A2A",
+      "statusBarItem.activeBackground": "#A52A2A",
+      "activityBar.background": "#0d1017",
+      "titleBar.activeBackground": "#0d1017",
+      "titleBar.inactiveBackground": "#0d1017",
+      "tab.activeBackground": "#08003c",
+      "tab.inactiveBackground": "#0d1017",
+      "editorGroupHeader.tabsBackground": "#0d1017",
+      "editorGutter.background": "#0d1017",
+      "editorOverviewRuler.background": "#0d1017",
+      "scrollbar.shadow": "#00000000",
+      "scrollbarSlider.background": "#170a70",
+      "scrollbarSlider.hoverBackground": "#870096",
+      "scrollbarSlider.activeBackground": "#870096",
+      "editorGroupHeader.noTabsBackground": "#0d1017",
+      "editorGroupHeader.tabsBorder": "#0d1017",
+      "breadcrumb.background": "#0d1017",
+      "breadcrumbPicker.background": "#0d1017",
+      "sideBar.background": "#0d1017",
+      "sideBarSectionHeader.background": "#0d1017",
+      "sideBarSectionHeader.border": "#0d1017",
+      "tree.indentGuidesStroke": "#444444",
+      "list.hoverBackground": "#333333",
+      "list.activeSelectionBackground": "#3a3a3a",
+      "list.inactiveSelectionBackground": "#3a3a3a",
+      "quickInput.background": "#000000",
+      "quickInputTitle.background": "#000000",
+      "editorWidget.background": "#040466",
+      "list.focusBackground": "#111111",
+      "input.background": "#000000",
+      "dropdown.background": "#000000",
+      "activityBarBadge.background": "#a70101",
+      "activityBarBadge.foreground": "#FFFFFF",
+      "button.background": "#940194",
+      "button.foreground": "#FFFFFF",
+      "button.hoverBackground": "#dd00aa",
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          { "scope": "keyword.other.dotenv", "settings": {} },
+          {
+            "scope": ["entity.name.function", "meta.function-call", "support.function", "variable.function"],
+            "settings": { "foreground": "#8BE9FD", "fontStyle": "bold" }
+          },
+          {
+            "scope": ["variable.other", "variable.parameter", "variable.language"],
+            "settings": { "foreground": "#FF79C6", "fontStyle": "italic" }
+          },
+          {
+            "scope": ["entity.name.type", "entity.other.inherited-class", "support.class", "storage.type"],
+            "settings": { "foreground": "#50FA7B", "fontStyle": "bold" }
+          },
+          { "scope": "string", "settings": { "foreground": "#F1FA8C", "fontStyle": "" } },
+          { "scope": "constant.numeric", "settings": { "foreground": "#BD93F9", "fontStyle": "bold" } },
+          { "scope": "keyword", "settings": { "foreground": "#FF79C6", "fontStyle": "bold" } },
+          { "scope": "keyword.control", "settings": { "foreground": "#FFB86C", "fontStyle": "bold italic" } },
+          { "scope": "comment", "settings": { "foreground": "#6272A4", "fontStyle": "italic" } },
+          { "scope": "keyword.operator", "settings": { "foreground": "#FF79C6", "fontStyle": "bold" } },
+          { "scope": "constant.language", "settings": { "foreground": "#BD93F9", "fontStyle": "bold italic" } },
+          { "scope": "punctuation", "settings": { "foreground": "#F8F8F2", "fontStyle": "" } }
+        ]
+      }
+    }
+  },
+
+  // Outras Configurações ----------------------------------------------------------------------------------------------
+  "extensions.ignoreRecommendations": true, // Ignora recomendações de extensões.
+  "gitlens.codeLens.recentChange.enabled": false, // Desabilita o CodeLens do GitLens.
+  "gitlens.advanced.messages": {
+    "suppressIntegrationRequestTimedOutWarning": true
+  },
+  "git.enableSmartCommit": true, // Habilita commit inteligente.
+  "git.openRepositoryInParentFolders": "always", // Abre repositório em pastas parentes.
+  "security.workspace.trust.untrustedFiles": "newWindow", // Abre arquivos não confiáveis em nova janela.
+  "update.mode": "manual", // Desabilita atualização automática.
+  "update.showReleaseNotes": false, // Não mostra notas de atualização.
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": { "x": 11, "y": 10 },
+    "opacity": 1,
+    "vibrancy": "dark",
+    "frame": false
+  }, // Customizações do APC Electron.
+  "apc.header": { "height": 36 },
+  "apc.listRow": { "height": 24 },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  }, // Desabilita o minimap.
+  "keyboard.dispatch": "keyCode", // Usa key codes para o teclado.
+  "symbols.hidesExplorerArrows": false, // Exibe as setas do explorador.
+  "workbench.editor.empty.hint": "hidden",
+  "terminal.integrated.env.linux": {},
+  "json.schemas": [
+    {
+      // @desc: O VSCodium irá validar qualquer arquivo .http que contenha JSON.
+      "fileMatch": ["**/simulator/*.http"],
+      // @desc: O editor irá procurar por um esquema que termine com ".schema.json"
+      //        na pasta 'schemas' para validar o JSON da requisição.
+      "url": "./schemas/*.schema.json"
+    }
+  ],
+  "editor.minimap.enabled": false
+}

@@ -1,0 +1,17 @@
+{
+  "divid": {
+    "prefix": "divid",
+    "body": ["", "// ----------------------------------------------------", ""],
+    "description": "divid"
+  },
+  "fileName": {
+    "prefix": "fileName",
+    "body": ["// @file: ${1}"],
+    "description": "fileName"
+  },
+  "desc": {
+    "prefix": "@desc",
+    "body": ["// @desc: ${1}"],
+    "description": "desc"
+  }
+}

@@ -1,0 +1,41 @@
+{
+
+  "divid": {
+    "prefix": "divid",
+    "body": ["", "// ----------------------------------------------------", ""],
+    "description": "divid"
+  },
+  "fileName": {
+    "prefix": "fileName",
+    "body": ["// @file: ${1}"],
+    "description": "fileName"
+  },
+  "desc": {
+    "prefix": "@desc",
+    "body": ["// @desc: ${1}"],
+    "description": "desc"
+  },
+  "testSuitesGo": {
+    "prefix": "testSuitesGo",
+    "body": [
+      "package create",
+      "",
+      "import (",
+      "\"testing\"",
+      ")",
+      "",
+      "// var sut = prepareCreate",
+      "",
+      "func Test_(t *testing.T) {",
+      "tested := \"//sut()\"",
+      "expected := \"//sut()\"",
+      "",
+      "if tested != expected {",
+      "t.Errorf(\"Ops... Retornado {{ %v }} na Funcao __ o esperado é {{ %v }}.\", expected, tested)",
+      "}",
+      "}",
+      ""
+    ],
+    "description": "testSuitesGo"
+  }
+}

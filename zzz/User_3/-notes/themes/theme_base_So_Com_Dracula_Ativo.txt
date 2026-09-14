@@ -1,0 +1,186 @@
+// -- INIT : My Theme Base -> Dracula ----------------------------------------
+  // 1. Define o tema de cor padrão a ser carregado ao iniciar o VSCodium.
+  // Isso ajuda a garantir que o VSCodium sempre tente carregar o Drácula.
+  "workbench.colorTheme": "Dracula Theme", // Certifique-se de que o nome exato do tema esteja aqui.
+  // 2. Customizações de Cores da Interface (UI) e Sintaxe (Tokens)
+  // TODO: As customizações ABAIXO serão aplicadas SOMENTE QUANDO o tema "Dracula Theme" estiver ativo.
+  "workbench.colorCustomizations": {
+    "[Dracula Theme]": { // <-- ATENÇÃO: TODAS as customizações agora estão DENTRO DESTE BLOCO.
+      // O nome "Dracula Theme" deve ser o ID exato do tema Drácula.
+      // Configurações de Cores da UI (Workbench Colors)
+      // Estas cores se aplicarão APENAS quando o "Dracula Theme" estiver ativo.
+      "editor.background": "#0d1017", // -- fundo total do editor
+      "statusBar.background": "#0d1017", // fundo do rodape
+      "statusBar.foreground": "#FFFFFF", // Cor do texto na barra de status (branco para contraste)
+      "statusBarItem.hoverBackground": "#A52A2A", // Cor ao passar o mouse sobre itens no footer
+      "statusBarItem.activeBackground": "#A52A2A", // Cor quando um item no footer está ativo
+      // Backgrounds
+      "activityBar.background": "#0d1017",
+      "titleBar.activeBackground": "#0d1017",
+      "titleBar.inactiveBackground": "#0d1017",
+      "tab.activeBackground": "#08003c",
+      "tab.inactiveBackground": "#0d1017",
+      "editorGroupHeader.tabsBackground": "#0d1017",
+      "editorGutter.background": "#0d1017",
+      "scrollbar.background": "#0d1017",
+      "editorOverviewRuler.background": "#0d1017",
+      "scrollbar.shadow": "#00000000",
+      "scrollbarSlider.background": "#170a70",
+      "scrollbarSlider.hoverBackground": "#870096",
+      "scrollbarSlider.activeBackground": "#870096",
+      "editorGroupHeader.noTabsBackground": "#0d1017",
+      "editorGroupHeader.tabsBorder": "#0d1017",
+      "breadcrumb.background": "#0d1017",
+      "breadcrumbPicker.background": "#0d1017",
+      "sideBar.background": "#0d1017",
+      "sideBarSectionHeader.background": "#0d1017",
+      "sideBarSectionHeader.border": "#0d1017",
+      "tree.indentGuidesStroke": "#444444",
+      "list.hoverBackground": "#333333",
+      "list.activeSelectionBackground": "#3a3a3a",
+      "list.inactiveSelectionBackground": "#3a3a3a",
+      "quickInput.background": "#000000",
+      "quickInputTitle.background": "#000000",
+      "editorWidget.background": "#040466",
+      "list.focusBackground": "#111111",
+      "input.background": "#000000",
+      "dropdown.background": "#000000",
+      // Custom colors Github acoes ----------------------------------------------
+      "activityBarBadge.background": "#a70101", // botao aviso com numero que tem modificacoes
+      "activityBarBadge.foreground": "#FFFFFF", // Cor do texto/número no badge
+      // Opcional: Para os botões "Commit" dentro da Source Control View:
+      "button.background": "#940194", // Cor de fundo dos botões principais (Commit, etc.)
+      "button.foreground": "#FFFFFF", // Cor do texto dos botões
+      "button.hoverBackground": "#dd00aa", // Cor ao passar o mouse sobre os botões
+      // ----- Customizações de Cores e Estilos de Sintaxe (Syntax Highlighting) -----
+      // Estas regras se aplicarão APENAS quando o "Dracula Theme" estiver ativo.
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "keyword.other.dotenv", // Dotenv - sets
+            "settings": {
+              // Adicione configurações aqui se precisar. Ex:
+              // "foreground": "#FF00FF",
+              // "fontStyle": "bold"
+            }
+          },
+          // --- CATEGORIAS GERAIS E SUGESTÕES ---
+          // 1. FUNÇÕES / MÉTODOS
+          {
+            "scope": [
+              "entity.name.function", // Nomes de funções/métodos (Kotlin: fun minhaFuncao)
+              "meta.function-call", // Chamadas de função (Kotlin: minhaFuncao())
+              "support.function", // Funções built-in ou de bibliotecas
+              "variable.function" // Variáveis que contêm funções (e.g. lambdas)
+            ],
+            "settings": {
+              "foreground": "#8BE9FD", // Azul claro (cor padrão do Drácula para funções)
+              "fontStyle": "bold" // Exemplo: Deixar em negrito
+            },
+            "desc": "Estilo para nomes e chamadas de funções/métodos."
+          },
+          // 2. VARIÁVEIS E PARÂMETROS
+          {
+            "scope": [
+              "variable.other", // Variáveis em geral (Kotlin: val minhaVar)
+              "variable.parameter", // Parâmetros de funções
+              "variable.language" // Variáveis da linguagem (e.g., this)
+            ],
+            "settings": {
+              "foreground": "#FF79C6", // Rosa (cor padrão do Drácula para variáveis)
+              "fontStyle": "italic" // Exemplo: Deixar em itálico
+            },
+            "desc": "Estilo para variáveis e parâmetros."
+          },
+          // 3. CLASSES / TIPOS / ENUMS / STRUCTS
+          {
+            "scope": [
+              "entity.name.type", // Nomes de classes, interfaces, enums (Kotlin: class MinhaClasse)
+              "entity.other.inherited-class", // Classes herdadas
+              "support.class", // Classes built-in (e.g., String, Int)
+              "storage.type" // Palavra-chave de tipo (e.g., class, interface)
+            ],
+            "settings": {
+              "foreground": "#50FA7B", // Verde (cor padrão do Drácula para tipos)
+              "fontStyle": "bold" // Exemplo: Deixar em negrito
+            },
+            "desc": "Estilo para nomes de classes, tipos e estruturas."
+          },
+          // 4. STRINGS (TEXTOS ENTRE ASPAS)
+          {
+            "scope": "string",
+            "settings": {
+              "foreground": "#F1FA8C", // Amarelo (cor padrão do Drácula para strings)
+              "fontStyle": "" // Sem estilo extra (pode ser "italic" ou "bold")
+            },
+            "desc": "Estilo para strings."
+          },
+          // 5. NÚMEROS
+          {
+            "scope": "constant.numeric",
+            "settings": {
+              "foreground": "#BD93F9", // Roxo (cor padrão do Drácula para números)
+              "fontStyle": "bold" // Exemplo: Deixar em negrito
+            },
+            "desc": "Estilo para números."
+          },
+          // 6. PALAVRAS-CHAVE DA LINGUAGEM (KEYWORDS)
+          {
+            "scope": "keyword", // Palavras-chave gerais (e.g., fun, val, var, if, for, return)
+            "settings": {
+              "foreground": "#FF79C6", // Rosa (cor padrão do Drácula para palavras-chave)
+              "fontStyle": "bold" // Exemplo: Deixar em negrito
+            },
+            "desc": "Estilo para palavras-chave da linguagem."
+          },
+          {
+            "scope": "keyword.control", // Palavras-chave de controle de fluxo (if, else, for)
+            "settings": {
+              "foreground": "#FFB86C", // Laranja (exemplo de mudança)
+              "fontStyle": "bold italic"
+            },
+            "desc": "Estilo para palavras-chave de controle de fluxo."
+          },
+          // 7. COMENTÁRIOS
+          {
+            "scope": "comment",
+            "settings": {
+              "foreground": "#6272A4", // Cinza-azulado (cor padrão do Drácula para comentários)
+              "fontStyle": "italic" // Exemplo: Deixar em itálico
+            },
+            "desc": "Estilo para comentários."
+          },
+          // 8. OPERADORES
+          {
+            "scope": "keyword.operator", // Operadores (+, -, =, ==, &&, ||)
+            "settings": {
+              "foreground": "#FF79C6", // Rosa (cor padrão do Drácula)
+              "fontStyle": "bold" // Exemplo: Deixar em negrito
+            },
+            "desc": "Estilo para operadores."
+          },
+          // 9. OUTRAS CONSTANTES (Booleanos, null)
+          {
+            "scope": "constant.language", // true, false, null, undefined
+            "settings": {
+              "foreground": "#BD93F9", // Roxo (cor padrão do Drácula)
+              "fontStyle": "bold italic"
+            },
+            "desc": "Estilo para constantes de linguagem (booleanos, nulos)."
+          },
+          // 10. PONTUAÇÃO (Parênteses, Chaves, Colchetes, Vírgulas, Pontos e Vírgulas)
+          {
+            "scope": "punctuation",
+            "settings": {
+              "foreground": "#F8F8F2", // Branco (cor padrão do Drácula)
+              "fontStyle": ""
+            },
+            "desc": "Estilo para pontuação."
+          },
+          // --- ADICIONE MAIS REGRAS AQUI COM BASE NO "Inspect Editor Tokens and Scopes" ---
+        ]
+      }
+    } // -- FIM do bloco "[Dracula Theme]"
+  },
+  "workbench.preferredLightColorTheme": "Dracula Theme" 
+  // -- FIM => my Theme -----------------------------------------------------

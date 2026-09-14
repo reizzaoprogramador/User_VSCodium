@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "name": "Google",
+      "icon": "account",
+      "location": "29214783",
+      "useDefaultFlags": true
+    }
+  ],
+  "activeProfile": "Google"
+}
