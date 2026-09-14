@@ -315,7 +315,7 @@
     ".prettierrc": "jsonc"
   },
   "explorer.confirmDelete": true,
-  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
   "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.enabled": true,
