@@ -1,6 +1,0 @@
-{
-    "key": "alt+b",
-    "command": "vsnetrw.open",
-    "when": "!editorLangId == 'vsnetrw'", // Importante para evitar que Alt+E funcione DENTRO do vsnetrw
-    "desc": "#VimVscode : abre o explorer vsnetrw -- já configurado no settings. como leader -"
-  },

@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    // --- Tema & Edição ---
+    "dracula-theme.theme-dracula",
+    "vscodevim.vim",
+    // --- Golang ---
+    "golang.go",
+    // --- Dart & Flutter ---
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    // --- Ferramentas Auxiliares & Utilitários ---
+    "eamodio.gitlens",
+    "usernamehw.errorlens",
+    "street side software.code-spell-checker",
+    "street side software.code-spell-checker-portuguese"
+  ],
+  "unwantedRecommendations": []
+}
