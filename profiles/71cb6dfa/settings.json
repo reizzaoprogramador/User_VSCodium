@@ -1,24 +1,15 @@
 {
-  // ====================================================================================================================
-  // GOOGLE - SETTING PROFILE -- Configurações Runtime & Ferramental por Linguagem
-  // ====================================================================================================================
-  // -- @sets: EDITOR : CONTROLAR LIBS EXTERNAS -------------------
   "editor.inlineSuggest.enabled": false,
-  // ====================================================================================================================
-  // CONFIGURAÇÃO VIM (VSCodeVim - vscodevim.vim v1.32.4) 
-  // ====================================================================================================================
   "vim.enableNeovim": false,
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
-  // cursor configs
   "vim.cursorStylePerMode": {
     "normal": "block",
     "insert": "line",
     "replace": "underline",
     "visual": "block"
   },
-  // --- Estilização do Status Bar via Modo Vim ---
   "vim.statusBarColorControl": true,
   "vim.statusBarColors": {
     "normal": "#bd93f9",
@@ -34,7 +25,6 @@
       "commandCenter": false
     }
   },
-  // --- Mapeamentos no Modo Insert ---
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -54,7 +44,6 @@
         "workbench.action.files.save"
       ]
     },
-    // Colar da área de transferência do sistema diretamente no Modo Insert
     {
       "before": [
         "<leader>",
@@ -75,9 +64,7 @@
       ]
     }
   ],
-  // --- Mapeamentos no Modo Normal (Comandos do VSCodium) ---
   "vim.normalModeKeyBindingsNonRecursive": [
-    // Salvar arquivo com 'ww' ou '<leader>ww'
     {
       "before": [
         "w",
@@ -97,7 +84,6 @@
         "workbench.action.files.save"
       ]
     },
-    // Fechar buffer atual com 'bb' ou '<leader>w'
     {
       "before": [
         "b",
@@ -116,7 +102,6 @@
         "workbench.action.closeActiveEditor"
       ]
     },
-    // Fechar todos os buffers/editores com 'qq'
     {
       "before": [
         "q",
@@ -126,7 +111,6 @@
         "workbench.action.closeAllEditors"
       ]
     },
-    // Alternar Barra Lateral (Explorer) com '<leader>e'
     {
       "before": [
         "<leader>",
@@ -136,7 +120,6 @@
         "workbench.action.toggleSidebarVisibility"
       ]
     },
-    // Alternar Terminal Integrado com '<leader>t'
     {
       "before": [
         "<leader>",
@@ -146,7 +129,6 @@
         "workbench.action.terminal.toggleTerminal"
       ]
     },
-    // Selecionar tudo com '<leader>aa'
     {
       "before": [
         "<leader>",
@@ -157,7 +139,6 @@
         "editor.action.selectAll"
       ]
     },
-    // Desfazer/Refazer na memória do editor
     {
       "before": [
         "u"
@@ -174,7 +155,6 @@
         "redo"
       ]
     },
-    // --- Melhores atalhos de Clipboard / Paste de fora ---
     {
       "before": [
         "p"
@@ -202,7 +182,6 @@
         "editor.action.clipboardPasteAction"
       ]
     },
-    // --- Abrir Menu/Registros da Área de Transferência com <leader>rg ---
     {
       "before": [
         "<leader>",
@@ -214,7 +193,6 @@
       ]
     }
   ],
-  // --- Mapeamentos no Modo Visual ---
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -245,7 +223,6 @@
       ]
     }
   ],
-  // -- Golang ---------------------------------------------------------------------------------------------------------
   "go.alternateTools": {
     "go": "/home/rzj/.go/bin/go"
   },
@@ -264,13 +241,9 @@
     "ui.semanticTokens": true
   },
   "go.toolsManagement.autoUpdate": true,
-  // -- Kotlin & Java ---------------------------------------------------------------------------------------------------
   "kotlin.language-server.enabled": true,
   "kotlin.language-server.start-time-limit": 30000,
   "java.home": "/home/rzj/.sdkman/candidates/java/21.0.2-tem",
-  // ====================================================================================================================
-  // Configurações Globais do Editor & Workspace
-  // ====================================================================================================================
   "workbench.editor.limit.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "right",
@@ -354,9 +327,6 @@
   "redhat.telemetry.enabled": false,
   "extensions.ignoreRecommendations": true,
   "symbols.hidesExplorerArrows": false,
-  // ====================================================================================================================
-  // Configurações por Linguagem ([language])
-  // ====================================================================================================================
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno",
     "editor.formatOnSave": true
@@ -407,9 +377,6 @@
   "[prisma]": {
     "editor.formatOnSave": true
   },
-  // ====================================================================================================================
-  // Extensões & Ferramentas
-  // ====================================================================================================================
   "codeium.enableCodeLens": false,
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
@@ -577,13 +544,10 @@
     ".nosidebar .inline-tabs-placeholder": "width: 75px",
     ".pane-header": "padding: 0 8px",
     ".pane-body": "padding: 8px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+    ".split-view-view:first-child .pane-header": "display: none !important",
+    ".monaco-list-row": "border-radius: 4px",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none"
   },
-  // ====================================================================================================================
-  // GOOGLE PROFILE SETTINGS - CUSTOMIZAÇÕES DE TEMA E CORES NATIVAS (REINALDO ZACHARIAS JUNIOR)
-  // ====================================================================================================================
   "workbench.colorTheme": "Dark Modern",
   "workbench.colorCustomizations": {
     "editor.background": "#0d1017",

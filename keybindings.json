@@ -1,5 +1,5 @@
 [
-  // --- NAVEGAÇÃO E SISTEMA ---
+  
   {
     "key": "ctrl+shift+r",
     "command": "workbench.action.files.reloadWindow",
@@ -12,7 +12,7 @@
       "absolute": true
     }
   },
-  // --- ATALHOS DE ARQUIVOS IGUAIS AO NVIM-TREE (NO EXPLORER DA SIDEBAR) ---
+  
   {
     "key": "n",
     "command": "explorer.newFile",
@@ -48,7 +48,7 @@
     "command": "filesExplorer.paste",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  // --- CLIPBOARD E ÁREA DE TRANSFERÊNCIA ---
+  
   {
     "key": "ctrl+c",
     "command": "editor.action.clipboardCopyAction"
@@ -67,7 +67,7 @@
     "command": "workbench.action.terminal.paste",
     "when": "terminalFocus && terminalHasBeenCreated"
   },
-  // --- TERMINAL INTEGRADO ---
+  
   {
     "key": "ctrl+t",
     "command": "workbench.action.terminal.toggleTerminal",
