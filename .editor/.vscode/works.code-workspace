@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "/home/rzj",
+      "name": "HOME"
+    },
+    {
+      "path": "/home/rzj/dotgit",
+      "name": "DOTGIT"
+    },
+    {
+      "path": "/home/rzj/dotfiles",
+      "name": "DOTFILES"
+    },
+    {
+      "path": "/home/rzj/dwww",
+      "name": "DWWW"
+    },
+    {
+      "path": "../../",
+      "name": "VSCODIUM"
+    },
+  ],
+  "settings": {}
+}

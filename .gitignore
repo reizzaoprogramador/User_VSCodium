@@ -15,8 +15,7 @@ zzz/pastas_DEFAULT_USER/
 
 ### AL ###
 # Template for AL projects for Dynamics 365 Business Central
-# launch.json folder
-.vscode/
+# launch.json folder # pode deixar os .vscode/
 # Cache folder
 .alcache/
 # Symbols folder
