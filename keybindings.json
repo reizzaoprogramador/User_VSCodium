@@ -44,14 +44,14 @@
     "description": "Fechar o buffer/aba atual"
   },
   {
-    "key": "alt+k",
+    "key": "ctrl+k",
     "command": "workbench.action.closeAllEditors",
     "description": "Fechar todos os buffers/abas abertos"
   },
   {
-    "key": "alt+k k",
-    "command": "workbench.action.closeEditorsInOtherGroups",
-    "description": "Fechar todos os outros buffers mantendo apenas o atual"
+    "key": "ctrl+j",
+    "command": "workbench.action.closeWindow",
+    "description": "Fechar a janela inteira do editor"
   },
   {
     "key": "alt+r",
@@ -83,12 +83,6 @@
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !inputFocus",
     "description": "Criar nova pasta no Explorer"
-  },
-  {
-    "key": "a",
-    "command": "explorer.newFile",
-    "when": "filesExplorerFocus && !inputFocus",
-    "description": "Criar novo arquivo no Explorer (Vim add)"
   },
   {
     "key": "d",
