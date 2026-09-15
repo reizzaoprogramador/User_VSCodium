@@ -1,10 +1,17 @@
+# @file: ~/.config/VSCodium/User/.gitignore
+# @mission: ignorar arquivos de runtime, estados internos e caches do VSCodium
+
 ### VSCodium / VS Code auto-generated folders
 **/globalStorage/
 **/workspaceStorage/
 **/History/
+**/Cache/
+**/CachedData/
+**/logs/
 /profiles/**/chatLanguageModels.json
+/profiles/**/extensions.json
+/profiles/**/state.vscdb*
 zzz/pastas_DEFAULT_USER/
-*chatLanguageModels.json
 
 ### AL ###
 # Template for AL projects for Dynamics 365 Business Central
@@ -29,4 +36,16 @@ rad.json
 *.flf
 # Test results file
 TestResults.xml
-profiles/71cb6dfa/chatLanguageModels.json
+
+# ==============================================================================
+# @README_FILE
+#
+# @IMPORTANTE_PROFILE:
+# - Regras com Wildcards (`/profiles/**/`) cobrem automaticamente qualquer hash
+#   de perfil dinâmico criado pelo VSCodium (como 71cb6dfa), eliminando a necessidade
+#   de mapear perfis individualmente no fim do arquivo.
+# - Mantenha no versionador apenas os arquivos declarativos de configuração
+#   (settings.json, keybindings.json) e a lista de extensões (extensions_list.txt).
+#
+# ==============================================================================
+_controles/_backups_/Google-profile/extensions.json
