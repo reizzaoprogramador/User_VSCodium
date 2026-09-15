@@ -1,23 +1,14 @@
-// tesers ts
+export const useCase = () => true;
 
-class Tester {
-  keyOne = 'ola 1'
+class FooClass1 {
+  foo1 = "foo";
 
-  execute() {
-    retoourn  ii `${this.keyOne} mundo 1 `
+  metodo() {
+    return useCase;
   }
 }
 
-const newTesterOne = new Tester();
+const instance1 = new FooClass1();
+console.log(instance1);
 
-console.log(newTesterOne)
-// console.log('fim')
-
-/*
-mudado_01
-mude_02
-foo = kkiiiillllllllk ola 1
-
-*/
-
-// novo ----------------------------------------------
+// mudado_01
