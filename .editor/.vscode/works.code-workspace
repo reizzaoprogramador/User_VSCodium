@@ -1,8 +1,8 @@
 {
   "folders": [
     {
-      "path": "/home/rzj",
-      "name": "HOME"
+      "path": "/home/rzj/.config",
+      "name": ".CONFIG"
     },
     {
       "path": "/home/rzj/dotgit",
@@ -21,8 +21,16 @@
       "name": "DWWW"
     },
     {
-      "path": "../../",
+      "path": "/home/rzj/.config/VSCodium/User",
       "name": "VSCODIUM"
+    },
+    {
+      "path": "/home/rzj",
+      "name": "HOME"
+    },
+    {
+      "path": "../../",
+      "name": "ATUAL_WORKS_UNICO"
     },
   ],
   "settings": {}
