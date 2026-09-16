@@ -5,19 +5,19 @@
       "name": ".CONFIG"
     },
     {
-      "path": "/home/rzj/dotgit",
+      "path": "/home/rzj/.config/dotgit",
       "name": "DOTGIT"
     },
     {
-      "path": "/home/rzj/dwww/bases_pgm/_rzj_dev_",
+      "path": "/home/rzj/.config/dwww/bases_pgm/_rzj_dev_",
       "name": "RZJ_DEV"
     },
     {
-      "path": "/home/rzj/dotfiles",
+      "path": "/home/rzj/.config/dotfiles",
       "name": "DOTFILES"
     },
     {
-      "path": "/home/rzj/dwww",
+      "path": "/home/rzj/.config/dwww",
       "name": "DWWW"
     },
     {
