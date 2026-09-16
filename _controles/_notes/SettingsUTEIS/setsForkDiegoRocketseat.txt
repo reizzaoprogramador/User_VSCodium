@@ -1,3 +1,7 @@
+# SETS VSCODE : FORK : DIEGO ROCKETSEAT
+> UseAsExtensoes: [ Min Theme, Symbols, APC Customize UI++]
+minimalista no VS Code:
+
 {
   // -- PREFERENCIAS RZJ
   "workbench.sideBar.location": "right",

@@ -1,5 +1,9 @@
 # CODIGOS UTEIS SETTINGS VSCODE GERAL
 
+# PREFERENCIAS RZJ 
+"workbench.sideBar.location": "right",
+
+
 - // autoSave
 ```
 "editor.formatOnSave": true,
