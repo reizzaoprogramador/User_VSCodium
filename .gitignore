@@ -11,6 +11,11 @@
 /profiles/**/chatLanguageModels.json
 /profiles/**/extensions.json
 /profiles/**/state.vscdb*
+### Extensoes (Instaladas localmente)
+/extensions/
+**/extensions/
+extensions_list.txt
+profiles/*/extensions
 zzz/pastas_DEFAULT_USER/
 
 ### AL ###
