@@ -1,0 +1,223 @@
+# CODIGOS UTEIS SETTINGS  :: VIM NO VSCODE COM EXTENSAO vim vscode
+
+- // usar modo vim no VSCODE
+  ```
+  "vim.enableNeovim": false,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors": {
+    "normal": "#bd93f9",
+    "insert": "#50fa7b",
+    "visual": "#ff79c6",
+    "replace": "#f1fa8c",
+    "visualline": "#ff79c6",
+    "visualblock": "#ff79c6"
+  },
+  "vim.cursorStylePerMode": {
+    "normal": "block",
+    "insert": "line",
+    "replace": "underline",
+    "visual": "block"
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        ",",
+        ","
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p",
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "w",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "b",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "q",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "a"
+      ],
+      "commands": [
+        "editor.action.selectAll"
+      ]
+    },
+    {
+      "before": [
+        "u"
+      ],
+      "commands": [
+        "undo"
+      ]
+    },
+    {
+      "before": [
+        "U"
+      ],
+      "commands": [
+        "redo"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p",
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "g"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "commands": [
+        "editor.action.clipboardCopyAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "g"
+      ],
+      "commands": [
+        "editor.action.clipboardPasteAction"
+      ]
+    }
+  ],
+  ```
+  

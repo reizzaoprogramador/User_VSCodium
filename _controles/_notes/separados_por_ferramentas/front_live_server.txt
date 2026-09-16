@@ -1,8 +1,0 @@
-"liveServer.settings.donotShowInfoMsg": true,
-  "apc.activityBar": {
-    "position": "bottom",
-    "hideSettings": true,
-    "size": 48,
-    "itemMargin": 8,
-    "itemSize": 32
-  },
