@@ -139,7 +139,7 @@ minimalista no VS Code:
   "workbench.editor.empty.hint": "hidden",
   "update.showReleaseNotes": false,
   "security.promptForLocalFileProtocolHandling": false,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
   "custom-ui-style.electron": {
     "frame": false,
     "titleBarStyle": "hiddenInset",
