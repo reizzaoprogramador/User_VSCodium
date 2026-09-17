@@ -1,6 +1,7 @@
 {
   // -- PREFERENCIAS RZJ
   "workbench.sideBar.location": "right",
+  "editor.cursorStyle": "line",
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "terminal.integrated.defaultProfile.linux": "bash",
