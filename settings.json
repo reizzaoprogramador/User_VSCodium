@@ -244,5 +244,6 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.multiCursorLimit": 50000,
   "workbench.preferredLightColorTheme": "Min Dark",
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "git.autofetch": true
 }
