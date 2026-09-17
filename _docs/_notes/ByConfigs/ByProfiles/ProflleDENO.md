@@ -1,5 +1,5 @@
 
-  // Settings: Profile >> Typescript
+  // Settings: Profile >> DENO
   
   // Configurações específicas do Deno para este perfil (se você usar Deno em projetos TS)
   "deno.enable": true,

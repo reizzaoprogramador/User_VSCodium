@@ -1,7 +1,3 @@
-# SETS VSCODE : FORK : DIEGO ROCKETSEAT
-> UseAsExtensoes: [ Min Theme, Symbols, APC Customize UI++]
-minimalista no VS Code:
-
 {
   // -- PREFERENCIAS RZJ
   "workbench.sideBar.location": "right",
@@ -63,7 +59,7 @@ minimalista no VS Code:
     "FIG_NEW_SESSION": "1"
   },
   "workbench.editor.labelFormat": "short",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "mdx": "javascriptreact"
@@ -163,9 +159,10 @@ minimalista no VS Code:
   },
   "custom-ui-style.font.sansSerif": "Inter, -apple-system",
   "editor.hideCursorInOverviewRuler": true,
-  "editor.minimap.enabled": false,
   "window.titleBarStyle": "native",
   "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "visible",
+  "editor.minimap.enabled": true,
   "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.patterns": {
     "package.json": ".eslint*, eslint.config.*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",

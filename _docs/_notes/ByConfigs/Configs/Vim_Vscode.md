@@ -1,6 +1,4 @@
-# CODIGOS UTEIS SETTINGS  :: VIM NO VSCODE COM EXTENSAO vim vscode
-
-- // usar modo vim no VSCODE
+// usar modo vim no VSCODE
   ```
   "vim.enableNeovim": false,
   "vim.leader": "<space>",
