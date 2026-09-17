@@ -1,0 +1,199 @@
+[
+  {
+    "key": "alt+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "description": "Alternar visibilidade da barra lateral (Explorer)"
+  },
+  {
+    "key": "shift+left",
+    "command": "workbench.action.previousEditor",
+    "description": "Navegar para o buffer/aba anterior"
+  },
+  {
+    "key": "shift+right",
+    "command": "workbench.action.nextEditor",
+    "description": "Navegar para o proximo buffer/aba"
+  },
+  {
+    "key": "shift+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly",
+    "description": "Mover linha ou selecao para cima"
+  },
+  {
+    "key": "shift+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly",
+    "description": "Mover linha ou selecao para baixo"
+  },
+  {
+    "key": "alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly",
+    "description": "Duplicar linha ou selecao para cima"
+  },
+  {
+    "key": "alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly",
+    "description": "Duplicar linha ou selecao para baixo"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.closeActiveEditor",
+    "description": "Fechar o buffer/aba atual"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.closeAllEditors",
+    "description": "Fechar todos os buffers/abas abertos"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.closeWindow",
+    "description": "Fechar a janela inteira do editor"
+  },
+  {
+    "key": "alt+r",
+    "command": "workbench.action.reloadWindow",
+    "description": "Recarregar a janela do editor"
+  },
+  {
+    "key": "alt+p",
+    "command": "copyFilePath",
+    "args": {
+      "absolute": true
+    },
+    "description": "Copiar caminho absoluto do arquivo atual"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Criar novo arquivo no Explorer (Vim add)"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Criar novo arquivo no Explorer"
+  },
+  {
+    "key": "Shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Criar nova pasta no Explorer"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Deletar arquivo/pasta selecionada no Explorer (Vim delete)"
+  },
+  {
+    "key": "c",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Modificar/Renomear arquivo no Explorer (Vim change)"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Renomear arquivo/pasta selecionada no Explorer"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Copiar arquivo/pasta no Explorer (Vim yank)"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Recortar arquivo/pasta no Explorer (Vim cut)"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Colar arquivo/pasta no Explorer (Vim paste)"
+  },
+  {
+    "key": "u",
+    "command": "undo",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Desfazer ultima acao de arquivo no Explorer (Vim undo)"
+  },
+  {
+    "key": "q",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Sair/Fechar a barra do Explorer (Vim quit)"
+  },
+  {
+    "key": ".",
+    "command": "user.toggleHiddenFiles",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Mostrar ou ocultar arquivos ponto/ocultos"
+  },
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Mover foco para baixo no Explorer (Vim down)"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Mover foco para cima no Explorer (Vim up)"
+  },
+  {
+    "key": "h",
+    "command": "list.collapse",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Recolher pasta ou subir nivel no Explorer (Vim left)"
+  },
+  {
+    "key": "l",
+    "command": "list.select",
+    "when": "filesExplorerFocus && !inputFocus",
+    "description": "Expandir pasta ou abrir arquivo no Explorer (Vim right)"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction",
+    "description": "Copiar selecao de texto no editor"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected",
+    "description": "Copiar selecao de texto no terminal"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "editor.action.clipboardPasteAction",
+    "description": "Colar conteudo da area de transferencia no editor"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated",
+    "description": "Colar conteudo da area de transferencia no terminal"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "workbench.action.terminal.focusFind",
+    "when": "terminalFocus && terminalHasBeenCreated",
+    "description": "Buscar texto dentro do terminal integrado"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus || !terminalFocus",
+    "description": "Alternar visibilidade do terminal integrado"
+  }
+]
