@@ -247,5 +247,22 @@
   "editor.multiCursorLimit": 50000,
   "workbench.preferredLightColorTheme": "Vesper",
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "projectManager.git.baseFolders": [
+    "~/.config/dotfiles",
+    "~/.config"
+  ],
+  "errorLens.enabled": true,
+  "errorLens.fontStyle": "italic",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.excludeBySource": [
+    "cSpell" // Opcional: ignora erros de ortografia da Error Lens para nao poluir o codigo
+  ],
+  // 1. Controle de sugestoes automaticas enquanto digita (Inline Completion)
+  "gemini.inlineSuggestions.enable": true,
+  // 2. Nivel de contexto enviado no Chat (projeto inteiro ou apenas arquivo aberto)
+  "gemini.chat.workspaceContext.enabled": true,
+  // 3. Otimizacao e filtros de privacidade / licenca de codigo
+  "gemini.duetAI.recitations.preventMatchingCode": true,
+  "http.systemCertificatesNode": true
 }

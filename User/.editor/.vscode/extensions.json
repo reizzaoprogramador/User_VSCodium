@@ -6,7 +6,10 @@
     "statiolake.min-theme",
     "cweijan.onedark-modern",
     "miguelsolorio.symbols",
-    "drcika.apc-extension"
+    "drcika.apc-extension",
+    "alefragnani.project-manager", // ,Project Manager - salva projeto nos favoritos
+    "usernamehw.errorlens", // Error LensMostra erros na linha : cobre diversas linguagens
+    "Google.geminicodeassist" // IA assistente Gemini
     // "asvetliakov.vscode-neovim"
   ],
   "unwantedRecommendations": []
