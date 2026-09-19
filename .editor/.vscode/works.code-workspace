@@ -1,16 +1,24 @@
 {
   "folders": [
     {
-      "path": "/home/rzj/.config",
-      "name": ".CONFIG"
+      "path": "/home/rzj",
+      "name": "HOME"
+    },
+    {
+      "path": "/home/rzj/.config/wdotfiles",
+      "name": "DOTFILES"
+    },
+    {
+      "path": "/home/rzj/.config/www",
+      "name": "WWW"
     },
     {
       "path": "/home/rzj/.config/www/bases_pgm/_rzj_dev_",
       "name": "RZJ_DEV"
     },
     {
-      "path": "../../",
-      "name": "ATUAL_WORKS_UNICO"
+      "path": "./../../",
+      "name": "ATUAL_VSCODIUM"
     },
   ],
   "settings": {}
