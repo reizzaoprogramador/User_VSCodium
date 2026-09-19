@@ -5,24 +5,8 @@
       "name": ".CONFIG"
     },
     {
-      "path": "/home/rzj/.config/dwww/bases_pgm/_rzj_dev_",
+      "path": "/home/rzj/.config/www/bases_pgm/_rzj_dev_",
       "name": "RZJ_DEV"
-    },
-    {
-      "path": "/home/rzj/.config/dotfiles",
-      "name": "DOTFILES"
-    },
-    {
-      "path": "/home/rzj/.config/dwww",
-      "name": "DWWW"
-    },
-    {
-      "path": "/home/rzj/.config/VSCodium/User",
-      "name": "VSCODIUM"
-    },
-    {
-      "path": "/home/rzj",
-      "name": "HOME"
     },
     {
       "path": "../../",

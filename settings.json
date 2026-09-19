@@ -1,17 +1,19 @@
 {
   // -- PREFERENCIAS RZJ
   "workbench.sideBar.location": "right",
+  "editor.cursorStyle": "line",
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
-  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.linux": "bash",
   // ---
   "workbench.startupEditor": "newUntitledFile",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.lineHeight": 1.8,
   "editor.rulers": [
     80,
     120
   ],
+  "editor.renderRulers": "off",
   "extensions.ignoreRecommendations": true,
   "editor.stickyScroll.enabled": false,
   "workbench.tree.enableStickyScroll": false,
@@ -98,7 +100,7 @@
   "workbench.iconTheme": "symbols",
   "update.mode": "start",
   "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.defaultProfile.osx": "bash",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -243,7 +245,24 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.multiCursorLimit": 50000,
-  "workbench.preferredLightColorTheme": "Min Dark",
+  "workbench.preferredLightColorTheme": "Vesper",
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "projectManager.git.baseFolders": [
+    "~/.config/dotfiles",
+    "~/.config"
+  ],
+  "errorLens.enabled": true,
+  "errorLens.fontStyle": "italic",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.excludeBySource": [
+    "cSpell" // Opcional: ignora erros de ortografia da Error Lens para nao poluir o codigo
+  ],
+  // 1. Controle de sugestoes automaticas enquanto digita (Inline Completion)
+  "gemini.inlineSuggestions.enable": true,
+  // 2. Nivel de contexto enviado no Chat (projeto inteiro ou apenas arquivo aberto)
+  "gemini.chat.workspaceContext.enabled": true,
+  // 3. Otimizacao e filtros de privacidade / licenca de codigo
+  "gemini.duetAI.recitations.preventMatchingCode": true,
+  "http.systemCertificatesNode": true
 }

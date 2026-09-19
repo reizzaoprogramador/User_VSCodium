@@ -1,4 +1,5 @@
 [
+ 
   {
     "key": "alt+e",
     "command": "workbench.action.toggleSidebarVisibility",
@@ -195,5 +196,9 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminalFocus || !terminalFocus",
     "description": "Alternar visibilidade do terminal integrado"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "projectManager.saveProject"
   }
 ]

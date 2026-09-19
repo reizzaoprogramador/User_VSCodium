@@ -1,6 +1,7 @@
 export const useCase = () => true;
 
-const arg = "arg";
+const arg = "arg ok";
+const bar = "bar"
 
 class FooClass1 {
   foo1 = "foo";

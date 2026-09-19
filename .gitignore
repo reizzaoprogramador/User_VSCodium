@@ -1,81 +1,34 @@
 # @file: ~/.config/VSCodium/User/.gitignore
-# @mission: ignorar arquivos de runtime, estados internos e caches do VSCodium
+# @mission: ignorar arquivos de runtime, estados internos e caches do VSCodium na pasta User
 
-### VSCodium / VS Code auto-generated folders
-# IGNORAR TUDO 1 NIVEL ANTES DESTA User/
-# Ignorar pasta DIPS no nível anterior (VSCodium/DIPS)
-DIPS
-DIPS**
+### Runtime, Caches e Estados do VSCodium
+workspaceStorage/
+globalStorage/
+History/
+Backups/
+Cache/
+CachedData/
+logs/
+*.log
 
-# IGNORAR AQUI ONDE ESTOU NA User
-
-**/globalStorage/
-**/workspaceStorage/
-**/History/
-**/Cache/
-**/CachedData/
-**/logs/
-/profiles/**/chatLanguageModels.json
-/profiles/**/extensions.json
-/profiles/**/state.vscdb*
-### Extensoes (Instaladas localmente)
-/extensions/
-**/extensions/
-extensions_list.txt
+### Perfis Secundários e Extensões
+profiles/**/chatLanguageModels.json
+profiles/**/extensions.json
+profiles/**/state.vscdb*
 profiles/*/extensions
-zzz/pastas_DEFAULT_USER/
+extensions/
+extensions_list.txt
+zzz/
+_controles/_backups_/
 
-### AL ###
-# Template for AL projects for Dynamics 365 Business Central
-# launch.json folder # pode deixar os .vscode/
-# Cache folder
+### Projetos AL (Dynamics 365 Business Central)
 .alcache/
-# Symbols folder
 .alpackages/
-# Snapshots folder
 .snapshots/
-# Testing Output folder
 .output/
-# Extension App-file
 *.app
-# Rapid Application Development File
 rad.json
-# Translation Base-file
 *.g.xlf
-# License-files
 *.bclicense
 *.flf
-# Test results file
 TestResults.xml
-
-# ==============================================================================
-# @README_FILE
-#
-# @IMPORTANTE_PROFILE:
-# - Regras com Wildcards (`/profiles/**/`) cobrem automaticamente qualquer hash
-#   de perfil dinâmico criado pelo VSCodium (como 71cb6dfa), eliminando a necessidade
-#   de mapear perfis individualmente no fim do arquivo.
-# - Mantenha no versionador apenas os arquivos declarativos de configuração
-#   (settings.json, keybindings.json) e a lista de extensões (extensions_list.txt).
-#
-# ==============================================================================
-
-.gitignore
-code.lock
-.gitignore
-Cookies
-Cookies-journal
-
-languagepacks.json
-Local State
-machineid
-Network Persistent State
-Preferences
-SharedStorage
-Dawn*
-GPUCache/*
-.gitignore
-Local Storage/leveldb/000003.log
-Trust*
-.gitignore
-SharedStorage*
